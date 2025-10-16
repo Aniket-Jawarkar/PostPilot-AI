@@ -6,11 +6,10 @@ const HomePage = () => {
   return (
     <div>
       <Header/>
-      <div className="flex w-screen h-[620px] bg-neutral-900 text-white">
+      <div className="flex w-screen h-[620px] bg-neutral-900 text-white  bg-[linear-gradient(to_bottom,#111111_0%,#111111_60%,#1E3FFB_75%,#1E90FF_85%,#45B897_100%)]">
 
       
       <div className="w-1/2 font-bold 
-  bg-[linear-gradient(135deg,#111111_0%,#111111_50%,#1E90FF_70%,#45B897_100%)] 
   flex flex-col items-start justify-center pl-23">
              <h2 className='text-4xl  tracking-wide mb-2' >Your AI Creates Social Posts</h2>
 
@@ -33,8 +32,10 @@ const HomePage = () => {
 
 
   
-        <div className="w-1/2 bg-green-600 flex items-center justify-center">
-          <p>Right Side</p>
+        <div className="w-1/2  flex items-center justify-center">
+          <div className='bg-black w-[500px] h-[500px] flex items-center justify-center '>
+            Vedio Demo
+          </div>
         </div>
 
       </div>

@@ -4,20 +4,17 @@ const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-black shadow-md">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 relative">
-  
-        <div className="text-2xl font-bold text-blue-600">MyLogo</div>
+        <div className="text-2xl font-bold text-white">MyLogo</div>
 
-     
         <nav className="hidden md:flex space-x-6 items-center">
-         
           <div
             className="relative"
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
           >
-            <button className="hover:text-blue-600 flex items-center gap-1">
+            <button className="hover:text-white flex items-center gap-1">
               Features
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +29,6 @@ const Header = () => {
               </svg>
             </button>
 
-           
             {isDropdownOpen && (
               <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg border">
                 <a href="#feature1" className="block px-4 py-2 hover:bg-gray-100">
@@ -48,24 +44,22 @@ const Header = () => {
             )}
           </div>
 
-        
-          <a href="#pricing" className="hover:text-blue-600">
+          <a href="#pricing" className="hover:text-white">
             Pricing
           </a>
-          <a href="#about" className="hover:text-blue-600">
+          <a href="#about" className="hover:text-white">
             About
           </a>
-          <a href="#faq" className="hover:text-blue-600">
+          <a href="#faq" className="hover:text-white">
             FAQ
           </a>
         </nav>
 
-     
         <div className="flex space-x-4">
-          <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+          <button className="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition">
             Sign Up Free
           </button>
-          <button className="text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">
+          <button className="text-white border border-white px-4 py-2 rounded hover:bg-gray-800 transition">
             Login
           </button>
         </div>

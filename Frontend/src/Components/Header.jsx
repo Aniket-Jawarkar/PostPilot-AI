@@ -4,7 +4,7 @@ const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <header className="bg-black shadow-md">
+    <header className="bg-black shadow-md ">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 relative">
         <div className="text-2xl font-bold text-white">MyLogo</div>
 
@@ -14,7 +14,7 @@ const Header = () => {
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
           >
-            <button className="hover:text-white flex items-center gap-1">
+            <button className=" text-white hover:text-[#0A8543] flex items-center gap-1">
               Features
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,13 +44,13 @@ const Header = () => {
             )}
           </div>
 
-          <a href="#pricing" className="hover:text-white">
+          <a href="#pricing" className=" text-white hover:text-[#0A8543]">
             Pricing
           </a>
-          <a href="#about" className="hover:text-white">
+          <a href="#about" className=" text-white hover:text-[#0A8543]">
             About
           </a>
-          <a href="#faq" className="hover:text-white">
+          <a href="#faq" className=" text-white hover:text-[#0A8543]">
             FAQ
           </a>
         </nav>

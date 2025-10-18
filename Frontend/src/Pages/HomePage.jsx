@@ -3,7 +3,7 @@ import Header from "../Components/Header";
 
 const HomePage = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden h-screen overflow-y-auto">
       <Header />
 
       {/* Hero */}

@@ -97,30 +97,42 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <div className="mt-8 md:-mt-[380px] ml-25 max-w-[900px] bg-[#EAF6F7] h-[350px] rounded-3xl shadow-2xl relative z-10 flex items-center group">
+        <div className="flex w-full items-center gap-6 px-6">
+          <div className="flex-1 min-w-0 mb-50 pl-6 relative">
+            <h3 className="text-2xl font-semibold mb-2 ">
+              Bring your ideas to life in seconds
+            </h3>
 
-        <div className="mt-8 md:-mt-[380px] ml-25 max-w-[900px] bg-[#EAF6F7] h-[350px] rounded-3xl shadow-2xl relative z-10 flex items-center group">
-  <div className="flex w-full items-center gap-6">
-    <div className="flex-1 min-w-0 pl-6">
-      <h3 className="text-2xl font-semibold mb-2">Bring your ideas to life in seconds</h3>
-      <div className="max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out group-hover:max-h-[220px] group-hover:opacity-100">
-        <p className="text-sm text-gray-700 mb-4">Turn your thoughts or photos into scroll-stopping social media posts with AI-crafted captions, hashtags, and visuals that match your brand voice.</p>
-        <ul className="list-disc list-inside text-gray-800 space-y-3">
-          <li>Captions</li>
-          <li>Hashtags</li>
-          <li>Visuals</li>
-        </ul>
+            <div className="mt-6 absolute left-0 top-[56px] w-full opacity-0 pointer-events-none transition-opacity duration-450 ease-in-out group-hover:opacity-100 group-hover:pointer-events-auto">
+              <p className="text-sm text-gray-700 mb-4">
+                Turn your thoughts or photos into scroll-stopping social media
+                posts with AI-crafted captions, hashtags, and visuals that match
+                your brand voice.
+              </p>
+              <ul className="list-disc list-inside text-gray-800 space-y-3">
+                <li>Captions</li>
+                <li>Hashtags</li>
+                <li>Visuals</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="flex-none w-[450px] h-[350px] rounded-tr-2xl rounded-br-2xl relative overflow-hidden z-20 group">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop"
+              alt="Preview"
+              className="absolute left-0 top-0 w-full h-[110%] object-cover transform translate-y-[10%] group-hover:translate-y-0 transition-transform duration-300 ease-in-out"
+            />
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <span className="text-white text-lg font-medium">
+                Preview Area
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div className="flex-none w-[450px] h-[350px] rounded-tr-2xl rounded-br-2xl relative overflow-hidden z-20">
-      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop" alt="Preview" className="absolute left-0 top-0 right-0 w-full h-[110%] object-cover transform translate-y-[10%] group-hover:translate-y-0 transition-transform duration-300 ease-in-out" />
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <span className="text-white text-lg font-medium">Preview Area</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-  </div>
   );
 };
 

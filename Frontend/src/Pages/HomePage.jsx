@@ -98,7 +98,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="mt-8 md:-mt-[380px] ml-25 max-w-[900px] bg-[#EAF6F7] h-[350px] rounded-3xl shadow-2xl relative z-10 flex items-center group">
-        <div className="flex w-full items-center gap-6 px-6">
+        <div className="flex w-full items-center gap-6 pl-6">
           <div className="flex-1 min-w-0 mb-50 pl-6 relative">
             <h3 className="text-2xl font-semibold mb-2 ">
               Bring your ideas to life in seconds
@@ -125,10 +125,36 @@ const HomePage = () => {
               className="absolute left-0 top-0 w-full h-[110%] object-cover transform translate-y-[10%] group-hover:translate-y-0 transition-transform duration-300 ease-in-out"
             />
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <span className="text-white text-lg font-medium">
-                Preview Area
-              </span>
+              <span className="text-white text-lg font-medium"></span>
             </div>
+          </div>
+        </div>
+
+        <div className="absolute right-[-430px] top-1/2 transform -translate-y-1/2 w-[400px] h-[350px] bg-[#EAF6F7] rounded-xl shadow-md flex items-center justify-center z-30 group">
+          <div className="relative w-full h-full overflow-hidden rounded-xl">
+            <div className="absolute top-4 left-6 right-6 z-30">
+              <h4 className="text-lg font-semibold text-black">
+                Right Box Headline
+              </h4>
+            </div>
+
+            <div className="absolute inset-0 z-10 flex items-start justify-center pt-16 px-6 text-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 pointer-events-none">
+              <div>
+                <h5 className="text-base font-semibold text-black mb-2">
+                  Hidden Description
+                </h5>
+                <p className="text-sm text-black">
+                  This description appears as the image moves down, revealing
+                  content behind it.
+                </p>
+              </div>
+            </div>
+
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+              alt="Right Preview"
+              className="absolute left-0 bottom-0 w-full h-[65%] object-cover transform translate-y-0 group-hover:translate-y-[25%] transition-transform duration-300 ease-in-out z-20"
+            />
           </div>
         </div>
       </div>

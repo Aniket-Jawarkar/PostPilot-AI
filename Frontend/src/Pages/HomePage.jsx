@@ -1,4 +1,4 @@
-import React from "react";
+  import React from "react";
 import Header from "../Components/Header";
 
 const HomePage = () => {
@@ -97,14 +97,14 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="mt-8 md:-mt-[380px] ml-25 max-w-[900px] bg-[#EAF6F7] h-[350px] rounded-3xl shadow-2xl relative z-10 flex items-center group">
-        <div className="flex w-full items-center gap-6 pl-6">
-          <div className="flex-1 min-w-0 mb-50 pl-6 relative">
-            <h3 className="text-2xl font-semibold mb-2 ">
+      <div className="mt-8 md:-mt-[380px] ml-25 max-w-[900px] bg-[#EAF6F7] h-[350px] rounded-3xl shadow-2xl relative z-10 flex items-center">
+        {/* Left Box */}
+        <div className="left-box group flex w-full items-center gap-6 pl-6">
+          <div className="flex-1 min-w-0 relative pb-50  ">
+            <h3 className="text-2xl font-semibold mb-2">
               Bring your ideas to life in seconds
             </h3>
-
-            <div className="mt-6 absolute left-0 top-[56px] w-full opacity-0 pointer-events-none transition-opacity duration-450 ease-in-out group-hover:opacity-100 group-hover:pointer-events-auto">
+            <div className="mt-1 absolute left-0 top-[56px] w-full opacity-0 pointer-events-none transition-opacity duration-450 ease-in-out group-hover:opacity-100 group-hover:pointer-events-auto">
               <p className="text-sm text-gray-700 mb-4">
                 Turn your thoughts or photos into scroll-stopping social media
                 posts with AI-crafted captions, hashtags, and visuals that match
@@ -118,7 +118,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="flex-none w-[450px] h-[350px] rounded-tr-2xl rounded-br-2xl relative overflow-hidden z-20 group">
+          <div className="flex-none w-[450px] h-[350px] rounded-tr-2xl rounded-br-2xl relative overflow-hidden z-20">
             <img
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop"
               alt="Preview"
@@ -130,30 +130,34 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="absolute right-[-430px] top-1/2 transform -translate-y-1/2 w-[400px] h-[350px] bg-[#EAF6F7] rounded-xl shadow-md flex items-center justify-center z-30 group">
+        {/* Right Box */}
+        <div className="right-box group absolute right-[-430px] top-1/2 transform -translate-y-1/2 w-[400px] h-[350px] bg-[#EAF6F7] rounded-xl shadow-md flex items-center justify-center z-30 pt-10 ">
           <div className="relative w-full h-full overflow-hidden rounded-xl">
             <div className="absolute top-4 left-6 right-6 z-30">
               <h4 className="text-lg font-semibold text-black">
-                Right Box Headline
+                Turn ideas into scroll-stopping posts
               </h4>
             </div>
 
-            <div className="absolute inset-0 z-10 flex items-start justify-center pt-16 px-6 text-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 pointer-events-none">
-              <div>
-                <h5 className="text-base font-semibold text-black mb-2">
-                  Hidden Description
+            <div className="absolute left-0 inset-0 z-10 flex pt-16 px-6 text-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 pointer-events-none">
+              <div className="pl-4 text-left">
+               
+                <h5 className="text-sm text-gray-700 mb-4">
+                  Upload a photo or write a short prompt and get ready-to-post
+                  content in seconds.
                 </h5>
-                <p className="text-sm text-black">
-                  This description appears as the image moves down, revealing
-                  content behind it.
-                </p>
+                <ul className="list-disc list-inside text-gray-800 space-y-1">
+                  <li>Brand tone</li>
+                  <li>Image suggestions </li>
+                  <li>AI hooks</li>
+                </ul>
               </div>
             </div>
 
             <img
               src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
               alt="Right Preview"
-              className="absolute left-0 bottom-0 w-full h-[65%] object-cover transform translate-y-0 group-hover:translate-y-[25%] transition-transform duration-300 ease-in-out z-20"
+              className="absolute left-0 bottom-0 w-full h-[65%] object-cover transform translate-y-0 group-hover:translate-y-[75%] transition-transform duration-300 ease-in-out z-20"
             />
           </div>
         </div>
